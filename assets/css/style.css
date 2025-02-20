@@ -8,10 +8,23 @@ body {
   max-width: 65% !important;
   height: auto !important;
 }
+.profile-pic {
+  z-index: 1; /* Ensures the image is above the menu */
+  position: relative;
+}
 a {
   color: #3A86FF;
 }
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
 
+body.dark-mode .nav-wrapper, 
+body.dark-mode .card,
+body.dark-mode .table-of-contents {
+  background-color: #333;
+}
 nav {
   background: #FFFFFF;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
