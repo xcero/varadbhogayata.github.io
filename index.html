@@ -107,6 +107,7 @@
     </div>
   </nav>
   
+<!-- Google Tag Manager (noscript) -->
 <noscript>
   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
           height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -164,23 +165,13 @@
 <!-- Add some CSS -->
 <style>
   .logo-container {
-    position: absolute; /* Changed to absolute positioning */
-    top: 10px; /* Adjust as needed for spacing */
-    left: 10px; /* Adjust as needed for spacing */
-    z-index: 2; /* Ensure logo is above other elements */
-    background-color: #fff; /* Optional: if you want the logo to have a background */
-    padding: 10px; /* Adds some space around the logo */
-    border-radius: 50%; /* Makes the logo circular */
+    position: relative; /* Allows positioning of child elements */
+    z-index: 2; /* Ensure logo is above the navigation */
+    background-color: #fff; /* Optional: add background color to logo */
   }
 
   nav {
-    margin-top: 70px; /* Adjust as needed to prevent overlap */
-    /* Ensure that nav has enough space below the logo */
-  }
-
-  /* Additional styling to ensure the layout is responsive */
-  .side-nav {
-    padding-top: 80px; /* Space to prevent overlap with the logo */
+    margin-top: 20px; /* Space between the logo and nav */
   }
 </style>
 
