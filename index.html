@@ -5,6 +5,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    body.dark-mode .nav-wrapper, 
+    body.dark-mode .card,
+    body.dark-mode .table-of-contents {
+      background-color: #333;
+    }
+
+    .profile-pic {
+      z-index: 1;
+      position: relative;
+    }
+  </style>
+
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -93,7 +111,12 @@
   <!-- Nav class 1 -->
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
-
+ <script>
+    // Toggle dark mode
+    document.getElementById('toggle-dark-mode').addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+    });
+    </script>
  <li class="logo">
   <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo grey-blue-text">
     <img src="/assets/img/passport-new.png" class="circle img-responsive profile-pic" alt="avatar" style="max-width: 65%; height: auto;">
