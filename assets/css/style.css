@@ -4,7 +4,10 @@ body {
   color: #2E3A59;
   font-size: 18px;
 }
-
+#logo-container img {
+  max-width: 65% !important;
+  height: auto !important;
+}
 a {
   color: #3A86FF;
 }
