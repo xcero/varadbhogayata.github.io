@@ -112,22 +112,16 @@
           height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 
-<!-- Logo Section -->
-<div class="logo-container">
-  <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo grey-blue-text">
-    <img src="/assets/img/passport-new.png" class="circle img-responsive profile-pic" alt="avatar" style="max-width: 65%; height: auto;">
-  </a>
-</div>
-
 <!-- Navigation Menu-->
+<!-- Nav class 1 -->
 <nav class="hide-on-small-only">
   <ul class="side-nav fixed section table-of-contents">
-    <script>
-      // Toggle dark mode
-      document.getElementById('toggle-dark-mode').addEventListener('click', function () {
-        document.body.classList.toggle('dark-mode');
-      });
-    </script>
+  
+    <li class="logo">
+      <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo grey-blue-text">
+        <img src="/assets/img/passport-new.png" class="circle img-responsive profile-pic" alt="avatar" style="max-width: 65%; height: auto;">
+      </a>
+    </li>
     
     <li class="bold">
       <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
@@ -163,25 +157,24 @@
 
 <!-- Add some CSS -->
 <style>
+  .logo {
+    margin: 20px 0; /* Adjust margin to prevent overlap */
+  }
+
   .logo-container {
-    position: absolute; /* Absolute positioning to place the logo */
-    top: 10px; /* Adjust vertical spacing */
-    left: 10px; /* Adjust horizontal spacing */
-    z-index: 2; /* Ensures the logo is on top of other elements */
-    padding: 0; /* Remove padding to eliminate the background area */
-    border-radius: 50%; /* Keeps the logo circular */
+    position: relative; /* Maintain relative position for placement */
+    z-index: 2; /* Ensure logo is above other elements */
   }
 
   nav {
-    margin-top: 70px; /* Space below the logo to prevent overlap */
+    padding-top: 20px; /* Space below the logo to prevent overlap */
   }
 
-  /* Ensure the layout is responsive */
+  /* Additional styling to ensure the layout is responsive */
   .side-nav {
     padding-top: 80px; /* Space to prevent overlap with the logo */
   }
 </style>
-
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
