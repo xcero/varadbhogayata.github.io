@@ -2,105 +2,250 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
 
-    <style>
-        body {
-            transition: background-color 0.5s, color 0.5s;
-        }
+    body.dark-mode .nav-wrapper,
+    body.dark-mode .card,
+    body.dark-mode .table-of-contents {
+      background-color: #333;
+    }
 
-        body.dark-mode {
-            background-color: #121212;
-            color: #ffffff;
-        }
+    .profile-pic {
+      z-index: 1;
+      position: relative;
+    }
+  </style>
 
-        .logo {
-            text-align: center; /* Center the logo horizontally */
-            margin-bottom: 20px; /* Add space below the logo */
-        }
+   <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');
+  </script>
+  
+<!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Cesar Romero | Ing en Sistemas</title>
 
-        #logo-container {
-            display: block; /* Makes the logo occupy the full width */
-        }
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-126939217-2');
+  </script>  
 
-        .profile-pic {
-            max-width: 80%; /* Adjusts the logo size for better fit */
-            height: auto; /* Maintains aspect ratio */
-        }
-
-        nav {
-            padding-top: 30px; /* Space above nav items to prevent overlap */
-        }
-    </style>
-
-    <script>
-        // Google Tag Manager Code
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');
-
-        // Toggle dark mode
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById('toggle-dark-mode').addEventListener('click', function () {
-                document.body.classList.toggle('dark-mode');
-                const isDarkMode = document.body.classList.contains('dark-mode');
-                this.innerHTML = isDarkMode ? '<i class="fa fa-sun-o"></i> Light Mode' : '<i class="fa fa-moon-o"></i> Dark Mode';
-            });
-        });
-    </script>
-
-    <title>Cesar Romero | Ing en Sistemas</title>
-
-    <!-- CSS for Materialize and Font Awesome -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cesar Romero | Ing en SIstemas" />
+  <meta property="og:description" content="Software Developer" />
+  <meta property="og:url" content="https://xcero.github.io/" />
+  <meta property="og:site_name" content="Cesar Romero | Ing Sistemas" />
+  <meta property="article:publisher" content="https://xcero.github.io/" />
+  <meta property="og:image" content="https://xcero.github.io/encafe" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@Cesar_Romero" />
+  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
+  <meta name="twitter:description" content="Software Developer" />
+  <meta name="twitter:url" content="https://twitter.com/xcero_sv" />
+  <meta name="author" content="Cesar Romero" />
+  <meta name="description" content="Software Developer with a passion for backend development and artificial intelligence." />
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <!-- Google Site Verification for indexing -->
+  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
+   <nav class="nav-wrapper">
+    <div class="container">
+      <a href="#" class="brand-logo">Cesar Romero</a>
+      <ul class="right">
+        <li>
+          <button id="toggle-dark-mode" class="btn grey darken-3 white-text">
+            <i class="fa fa-moon-o"></i> Dark Mode
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 
-    <!-- Navigation Menu-->
-    <nav class="nav-wrapper">
-        <div class="container">
-            <a href="#" class="brand-logo">Cesar Romero</a>
-            <ul class="right">
-                <li>
-                    <button id="toggle-dark-mode" class="btn grey darken-3 white-text">
-                        <i class="fa fa-moon-o"></i> Dark Mode
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<!-- Logo Section -->
+<div class="logo-container">
+  <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo grey-blue-text">
+    <img src="/assets/img/passport-new.png" class="circle img-responsive profile-pic" alt="avatar" style="max-width: 65%; height: auto;">
+  </a>
+</div>
 
-    <!-- Nav class 1 -->
-    <nav class="hide-on-small-only">
-        <ul class="side-nav fixed section table-of-contents">
-            <li class="logo">
-                <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo grey-blue-text">
-                    <img src="/assets/img/passport-new.png" class="circle img-responsive profile-pic" alt="avatar" style="max-width: 65%; height: auto;">
-                </a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
-                    <i class="mdi-social-person small"></i><span>About</span></a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark teal-text">
-                    <i class="mdi-action-trending-up small"></i><span>Experience</span></a>
-            </li>
+<!-- Navigation Menu-->
+<nav class="hide-on-small-only">
+  <ul class="side-nav fixed section table-of-contents">
+    <script>
+      // Toggle dark mode
+      document.getElementById('toggle-dark-mode').addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+      });
+    </script>
+    
+    <li class="bold">
+      <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
+        <i class="mdi-social-person small"></i><span>About</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark teal-text">
+        <i class="mdi-action-trending-up small"></i><span>Experience</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text">
+        <i class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text">
+        <i class="mdi-action-assessment small"></i><span>Skills</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text">
+        <i class="mdi-social-school small"></i><span>Education</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text">
+        <i class="mdi-content-mail small"></i><span>Contact</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Open Cesar's resume in a new tab" href="https://xcero.github.io/assets/resume/Cesar_Romero_Resume.pdf" target="_blank"
+         class="waves-effect waves-dark teal-text">
+        <i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Add some CSS -->
+<style>
+  .logo-container {
+    position: absolute; /* Changed to absolute positioning */
+    top: 10px; /* Adjust as needed for spacing */
+    left: 10px; /* Adjust as needed for spacing */
+    z-index: 2; /* Ensure logo is above other elements */
+    background-color: #fff; /* Optional: if you want the logo to have a background */
+    padding: 10px; /* Adds some space around the logo */
+    border-radius: 50%; /* Makes the logo circular */
+  }
+
+  nav {
+    margin-top: 70px; /* Adjust as needed to prevent overlap */
+    /* Ensure that nav has enough space below the logo */
+  }
+
+  /* Additional styling to ensure the layout is responsive */
+  .side-nav {
+    padding-top: 80px; /* Space to prevent overlap with the logo */
+  }
+</style>
+
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        mdi-action-assessment
+        mdi-social-poll
+        mdi-av-equalizer
+        -->
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+      
+      <li class="bold">
+        <!--
+        ICONS:
+        -->
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- 
+        1. mdi-communication-contacts
+        2. mdi-content-mail
+        3. mdi-communication-email
+        -->
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        1. mdi-action-description
+        2. mdi-file-folder
+        3. mdi-file-folder-open
+        4. mdi-file-attachment
+        5. mdi-file-folder-shared
+<!-- <a aria-label="Open Cesar's resume in a new tab" href="#resume" target="_blank"
+          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
+        <a aria-label="Open Cesar's resume in a new tab" href="https://xcero.github.io/assets/resume/Cesar_Romero_Resume.pdf" target="_blank"
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
+      </li>
+    </ul>
+  </nav>
 
   <!-- Nav class 2 -->
   <nav class="hide-on-large only trigger z-depth-1">
