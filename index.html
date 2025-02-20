@@ -1,17 +1,18 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<style>
+  
+  <style>
     body.dark-mode {
       background-color: #121212;
       color: #ffffff;
     }
 
-    body.dark-mode .nav-wrapper, 
+    body.dark-mode .nav-wrapper,
     body.dark-mode .card,
     body.dark-mode .table-of-contents {
       background-color: #333;
@@ -23,32 +24,35 @@
     }
   </style>
 
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTazgName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Materialize - Compiled and minified CSS-->
+   <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');
+  </script>
+  
+<!-- Materialize - Compiled and minified CSS-->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <!-- Font Awesome Icon - CSS-->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>Cesar Romero | Software Developer</title>
+  <title>Cesar Romero | Ing en Sistemas</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-126939217-2');
-  </script>
+  </script>  
 
   <!-- Open Graph-->
   <meta property="og:locale" content="en_US" />
@@ -102,27 +106,74 @@
       </ul>
     </div>
   </nav>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
   
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
- <script>
-    // Toggle dark mode
-    document.getElementById('toggle-dark-mode').addEventListener('click', function () {
-      document.body.classList.toggle('dark-mode');
-    });
-    </script>
- <li class="logo">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<!-- Logo Section -->
+<div class="logo-container">
   <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo grey-blue-text">
     <img src="/assets/img/passport-new.png" class="circle img-responsive profile-pic" alt="avatar" style="max-width: 65%; height: auto;">
   </a>
-</li>
+</div>
 
+<!-- Navigation Menu-->
+<nav class="hide-on-small-only">
+  <ul class="side-nav fixed section table-of-contents">
+    <script>
+      // Toggle dark mode
+      document.getElementById('toggle-dark-mode').addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+      });
+    </script>
+    
+    <li class="bold">
+      <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
+        <i class="mdi-social-person small"></i><span>About</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark teal-text">
+        <i class="mdi-action-trending-up small"></i><span>Experience</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text">
+        <i class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text">
+        <i class="mdi-action-assessment small"></i><span>Skills</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text">
+        <i class="mdi-social-school small"></i><span>Education</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text">
+        <i class="mdi-content-mail small"></i><span>Contact</span></a>
+    </li>
+    <li class="bold">
+      <a aria-label="Open Cesar's resume in a new tab" href="https://xcero.github.io/assets/resume/Cesar_Romero_Resume.pdf" target="_blank"
+         class="waves-effect waves-dark teal-text">
+        <i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Add some CSS -->
+<style>
+  .logo-container {
+    position: relative; /* Allows positioning of child elements */
+    z-index: 2; /* Ensure logo is above the navigation */
+    background-color: #fff; /* Optional: add background color to logo */
+  }
+
+  nav {
+    margin-top: 20px; /* Space between the logo and nav */
+  }
+</style>
 
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
