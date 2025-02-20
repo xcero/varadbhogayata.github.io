@@ -164,21 +164,19 @@
 <!-- Add some CSS -->
 <style>
   .logo-container {
-    position: absolute; /* Changed to absolute positioning */
-    top: 10px; /* Adjust as needed for spacing */
-    left: 10px; /* Adjust as needed for spacing */
-    z-index: 2; /* Ensure logo is above other elements */
-    background-color: #fff; /* Optional: if you want the logo to have a background */
-    padding: 10px; /* Adds some space around the logo */
-    border-radius: 50%; /* Makes the logo circular */
+    position: absolute; /* Absolute positioning to place the logo */
+    top: 10px; /* Adjust vertical spacing */
+    left: 10px; /* Adjust horizontal spacing */
+    z-index: 2; /* Ensures the logo is on top of other elements */
+    padding: 0; /* Remove padding to eliminate the background area */
+    border-radius: 50%; /* Keeps the logo circular */
   }
 
   nav {
-    margin-top: 70px; /* Adjust as needed to prevent overlap */
-    /* Ensure that nav has enough space below the logo */
+    margin-top: 70px; /* Space below the logo to prevent overlap */
   }
 
-  /* Additional styling to ensure the layout is responsive */
+  /* Ensure the layout is responsive */
   .side-nav {
     padding-top: 80px; /* Space to prevent overlap with the logo */
   }
